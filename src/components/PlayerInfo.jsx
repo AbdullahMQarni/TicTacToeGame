@@ -1,7 +1,12 @@
 import { useState } from "react";
 
 
-function PlayerInfo({name, symbol}) {
+function PlayerInfo({initialName, symbol, isActive}) {
+    const [playerName, setPlayerName] = useState(initialName)
+
+    function handleChange(event){
+        setPlayerName(event.target.value)
+    }
 
     // state to change the player neme on click
     const [isEditing, setIsEditing] = useState(false);
@@ -11,16 +16,16 @@ function PlayerInfo({name, symbol}) {
     }
 
     // if function to convert between display and text box input
-    let PlayerName = <span className='player-name'>{name}</span>
+    let EditableName = <span className='player-name'>{playerName}</span>
 
     if (isEditing) {
-        PlayerName = <input type="text" required value={name} placeholder="Enter Ur Name"/>
+        EditableName = <input type="text" required value={playerName} onChange={handleChange}/>
     }
 
     return (
-        <li>
+        <li className={isActive ? 'active' : undefined}>
             <span className='player'>
-                {PlayerName}
+                {EditableName}
                 <span className='player-symbol'>{symbol}</span>
             </span>
             {/* to change word "Edit" to "save" */}
