@@ -60,5 +60,5 @@ Special thanks to the React.js community for their abundance of tutorials, docum
 Stay connected with us on social media:
 
 - Twitter: [@AbdullahMQarni](https://twitter.com/AbdullahMQarni)
-- Linkedin: [YourFacebookPage](https://www.linkedin.com/in/abdullahmalqarni)
+- Linkedin: [Linkedin Page](https://www.linkedin.com/in/abdullahmalqarni)
 - My Website: [My Website](https://www.abdullahqarni.com)
