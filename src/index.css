@@ -5,7 +5,8 @@
 }
 
 html {
-  font-family: 'Roboto Slab', sans-serif;
+  
+  font-family: 'fira code', sans;
   line-height: 1.5;
 
   color: #ebe7ef;
@@ -20,8 +21,8 @@ html {
 body {
   background: radial-gradient(
       circle at top,
-      rgba(241, 210, 70, 0.98),
-      rgba(250, 176, 103, 0.87)
+      rgb(34, 40, 49, .98),
+      rgb(46, 52, 60, 0.87)
     ),
     url('bg-pattern-dark.png');
   background-repeat: repeat;
@@ -41,10 +42,10 @@ header img {
 }
 
 h1 {
-  font-family: 'Caprasimo', cursive;
+  font-family: 'fira code', sans;
   font-size: 3rem;
   margin: 0 auto 3rem auto;
-  color: #3f3b00;
+  color: #00adb5;
 }
 
 #game-container {
@@ -52,7 +53,7 @@ h1 {
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background: linear-gradient(#383624, #282617);
+  background: linear-gradient(#222831, #2e343c);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -75,20 +76,20 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: #00adb5;
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: #00adb5;
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #c3ba78;
+  color: #53bfc5;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -97,7 +98,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: #00adb5;
 }
 
 .player {
@@ -111,7 +112,7 @@ h1 {
   display: inline-block;
   width: 10rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: #1f8085;
   text-transform: uppercase;
   margin: 0;
   padding: 0.5rem;
@@ -127,7 +128,7 @@ h1 {
   border: none;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
-  background-color: #46432f;
+  background-color: #1f5e61;
   text-align: center;
   text-transform: uppercase;
 }
@@ -135,7 +136,7 @@ h1 {
 .player-symbol {
   margin-left: 1rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: #08575b;
 }
 
 ol {
@@ -151,7 +152,7 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #f8c031;
+  color: #00adb5;
   border: none;
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
@@ -182,8 +183,8 @@ ol {
   width: 8rem;
   height: 8rem;
   border: none;
-  background: #aca788;
-  color: #3f3b00;
+  background: #cfebed;
+  color: #222831;
   font-size: 5rem;
   cursor: pointer;
   font-family: 'Caprasimo', cursive;
@@ -208,7 +209,7 @@ ol {
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: #00adb5;
   margin: 0;
 }
 
@@ -223,8 +224,8 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid #00adb5;
+  color: #00adb5;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
@@ -233,15 +234,15 @@ ol {
 }
 
 #game-over button:hover {
-  background: #fcd256;
-  color: #3f3b00;
+  background: #00adb5;
+  color: #08575b;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
 }
 
 #log {
   max-width: 20rem;
-  color: #3f3b00;
+  color: #00adb5;
   list-style: none;
   margin: 2rem auto;
   padding: 0;
@@ -255,13 +256,13 @@ ol {
 }
 
 #log li.highlighted {
-  background-color: #3f3b00;
+  background-color: #08575b;
   color: white;
 }
 
 #game-hints {
   text-align: center;
-  color: #46432f;
+  color: #08575b;
 }
 
 #game-hints h2 {
@@ -280,7 +281,7 @@ ol {
   cursor: pointer;
   border: none;
   background: transparent;
-  color: #23221f;
+  color: #1f2223;
   font: inherit;
   margin-top: 1.5rem;
 }
@@ -298,13 +299,13 @@ ol {
 
 @keyframes pulse-text {
   0% {
-    color: #e1dec7;
+    color: #c7d8e1;
   }
   50% {
-    color: #9f9d83;
+    color: #839a9f;
   }
   100% {
-    color: #e1dec7;
+    color: #c7e1de;
   }
 }
 
@@ -322,16 +323,16 @@ ol {
 
 @keyframes pulse {
   0% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
+    border-color: #00adb5;
+    box-shadow: 0 0 0 0 rgba(90, 246, 246, 0.4);
   }
   50% {
-    border-color: #f8c031;
-    box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
+    border-color: #00adb5;
+    box-shadow: 0 0 0 0.5rem rgba(90, 246, 246, 0);
   }
   100% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
+    border-color: #00adb5;
+    box-shadow: 0 0 0 0 rgba(90, 246, 246, 0);
   }
 }
 
