@@ -201,7 +201,7 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(40, 38, 23, 0.95);
+  background-color: rgba(23, 35, 40, 0.95);
   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
@@ -216,7 +216,7 @@ ol {
 #game-over p {
   font-size: 2rem;
   text-align: center;
-  color: #e1dec7;
+  color: #c7e1e1;
 }
 
 #game-over button {
@@ -230,14 +230,14 @@ ol {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s, color 0.2s;
-  box-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
+  box-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
 }
 
 #game-over button:hover {
   background: #00adb5;
   color: #08575b;
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 195, 255, 0.8);
 }
 
 #log {
