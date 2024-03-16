@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-function PlayerInfo({initialName, symbol, isActive}) {
+function PlayerInfo({initialName, symbol, isActive, onChangeName}) {
     const [playerName, setPlayerName] = useState(initialName)
 
     function handleChange(event){
@@ -13,6 +13,12 @@ function PlayerInfo({initialName, symbol, isActive}) {
     function handleIsEditing () {
         // just to convert the is editing state to true or false
         setIsEditing(wasEditing => !isEditing)
+
+        if (isEditing){
+            onChangeName(symbol, playerName)
+        }
+        
+        
     }
 
     // if function to convert between display and text box input

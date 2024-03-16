@@ -113,7 +113,6 @@ h1 {
   width: 10rem;
   font-size: 1rem;
   color: #1f8085;
-  text-transform: uppercase;
   margin: 0;
   padding: 0.5rem;
   border-radius: 4px;
@@ -130,7 +129,6 @@ h1 {
   animation: pulse-text 2s infinite;
   background-color: #1f5e61;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .player-symbol {
