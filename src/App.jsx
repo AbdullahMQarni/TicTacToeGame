@@ -57,7 +57,7 @@ function App() {
     }
   }
 
-  let hasDraw = gameBoard.length === 9 && !winner;
+  let hasDraw = gameTurns.length === 9 && !winner;
 
 
   function handleClickSquare(rowIndex, colIndex) {
