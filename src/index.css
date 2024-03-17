@@ -21,13 +21,22 @@ html {
 body {
   background: radial-gradient(
       circle at top,
-      rgb(34, 40, 49, .98),
+      rgba(47, 58, 73, 0.98),
       rgb(46, 52, 60, 0.87)
     ),
     url('bg-pattern-dark.png');
   background-repeat: repeat;
-  background-size: 100% 100%, 30% 30%, 100% 100%;
-  min-height: 110rem;
+  background-size: cover, auto, cover; /* Adjust background size */
+  min-height: 99vh;
+}
+
+
+.horizontalContainer{
+  display: flex;
+  width:80%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 header {
@@ -199,7 +208,7 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(23, 35, 40, 0.95);
+  background-color: rgba(32, 50, 61, 0.95);
   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
@@ -347,4 +356,88 @@ ol {
   100% {
     transform: scale(1);
   }
+}
+
+@media screen and (max-width: 750px){
+
+  html {
+    font-size: 14px; /* Adjust font size for better readability on smaller screens */
+  }
+
+  body {
+    background-size: auto; /* Adjust background size */
+    min-height: auto; /* Adjust minimum height */
+  }
+
+  .horizontalContainer {
+    width: 100%; /* Make it full width on small screens */
+    flex-direction: column;
+  }
+
+  header img {
+    width: 6rem; /* Decrease logo size */
+  }
+
+  h1 {
+    font-size: 2rem; /* Decrease heading size */
+    margin-bottom: 1rem; /* Adjust margin */
+  }
+
+  #game-container {
+    width: 95%; /* Make it full width */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  #players {
+    flex-wrap: wrap; /* Allow player elements to wrap */
+    gap: 1rem; /* Adjust gap between player elements */
+  }
+
+  #players li {
+    width: 100%; /* Make player elements full width */
+    justify-content: center;
+  }
+
+  .player input {
+    width: 88%; /* Make player name and input full width */
+    margin: 10px;
+  }
+
+  .player-name,
+  .player-symbol {
+    width: auto; /* Allow elements to take full width */
+    margin: 0.5rem 0; /* Add some margin between elements */
+  }
+
+  .player-symbol {
+    margin-top: 0; /* Remove top margin for symbol */
+  }
+
+  #game-board button {
+    width: 6rem; /* Decrease button size */
+    height: 6rem; /* Decrease button height */
+    font-size: 3rem; /* Decrease button font size */
+    padding: 0.5rem; /* Adjust padding */
+  }
+
+  #game-over h2 {
+    font-size: 2.5rem; /* Decrease font size */
+  }
+
+  #game-over p {
+    font-size: 1.5rem; /* Decrease font size */
+  }
+
+  #log {
+    max-width: 100%; /* Make log container full width */
+  }
+
+  #game-hints h2 {
+    font-size: 1.5rem; /* Decrease font size */
+  }
+
+  #game-hints button {
+    margin-top: 1rem; /* Adjust margin */
+  }
+  
 }

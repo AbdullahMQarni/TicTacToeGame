@@ -8,7 +8,7 @@ import GameOver from "./components/GameOver"
 const initialGameBoard = [
   [null,null,null],
   [null,null,null],
-  [null,null,null],
+  [null,null,null], 
 ];
 
 function deriveActivePlayer(gameTurns){
@@ -88,7 +88,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="horizontalContainer">
     <div id="game-container">
       <ol id="players" className="highlight-player">
         <PlayerInfo initialName={'player 1'} symbol={'X'} isActive={activePlayer === "X"} onChangeName={handlePlayerNameChange} />
@@ -98,7 +98,7 @@ function App() {
       <GameBoard onClickSquare={handleClickSquare}  board={gameBoard}/>
     </div>
     <Log turns={gameTurns} />
-    </>
+    </div>
   )
 }
 
