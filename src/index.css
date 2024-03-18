@@ -254,12 +254,24 @@ ol {
   margin: 2rem auto;
   padding: 0;
   text-align: center;
+  background: radial-gradient(
+    circle at top,
+    rgba(47, 58, 73, 0.98),
+    rgb(46, 52, 60, 0.87)
+  ),
+  url('bg-pattern-dark.png');
+  border-radius: 10px;
+}
+
+#log h2{
+  margin: 10px 80px 10px 80px;
 }
 
 #log li {
   border-radius: 4px;
   animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   margin: 0.75rem;
+  color: #c7e1de;
 }
 
 #log li.highlighted {
