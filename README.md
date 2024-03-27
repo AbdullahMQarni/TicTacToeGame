@@ -24,7 +24,7 @@ To start exploring the Tic Tac Toe project:
 2. Navigate to the project directory.
 3. Install dependencies using `npm install`.
 4. Run the development server with `npm run dev or npm start`.
-5. Open your browser and visit `http://localhost:3000 or http://localhost:5173` to interact with the game.
+5. Open your browser and visit `http://localhost:5173 or http://localhost:3000` to interact with the game.
 
 ## Project Structure
 
